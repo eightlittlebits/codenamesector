@@ -35,5 +35,10 @@ namespace CodeNameSector
 
             return Math.Max(Math.Abs(distance.X), Math.Abs(distance.Y));
         }
+
+        public override string ToString()
+        {
+            return string.Format("({0}, {1})", X, Y);
+        }
     }
 }
