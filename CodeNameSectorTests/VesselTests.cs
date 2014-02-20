@@ -11,10 +11,10 @@ namespace CodeNameSectorTests
     public class VesselTests
     {
         [Test]
-        public void Vessel_ProjectedMove_MovesCorrectDistanceAndDirection()
+        public void Vessel_ProjectedMove_MovesToCorrectLocation()
         {
             Vector2 position = new Vector2(35, 25); // 35N, 25E
-            Vector2 bearing = new Vector2(1, 1);    // NE
+            Vector2 bearing = Direction.NE;    // NE
             const int speed = 4;
             
             Vessel v = new Vessel(position, bearing, speed);

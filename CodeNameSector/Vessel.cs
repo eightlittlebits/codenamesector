@@ -7,25 +7,20 @@ namespace CodeNameSector
 {
     public class Vessel
     {
-        public Vector2 Position { get; private set; }
-        public Vector2 Bearing { get; protected set; }
-        public int Speed { get; protected set; }
+        public Vector2 Position { get; set; }
+        public Vector2 Heading { get; set; }
+        public int Speed { get; set; }
 
-        public Vessel(Vector2 position, Vector2 bearing, int speed)
+        public Vessel(Vector2 position, Vector2 heading, int speed)
         {
             Position = position;
-            Bearing = bearing;
+            Heading = heading;
             Speed = speed;
         }
 
         public Vector2 ProjectedMove()
         {
-            return Position + Bearing * Speed;
-        }
-
-        public void SetPosition(Vector2 position)
-        {
-            Position = position;
+            return Position + Heading * Speed;
         }
     }
 }
