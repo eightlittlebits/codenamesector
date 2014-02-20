@@ -18,9 +18,14 @@ namespace CodeNameSector
             Speed = speed;
         }
 
-        public void Move()
+        public Vector2 ProjectedMove()
         {
-            Position = Position + Bearing * Speed;
+            return Position + Bearing * Speed;
+        }
+
+        public void SetPosition(Vector2 position)
+        {
+            Position = position;
         }
     }
 }
