@@ -21,10 +21,10 @@ namespace CodeNameSectorTests
             // ./...
             // S....
             
-            Vector2 point = new Vector2(38, 37);
+            Vector2 point = new Vector2(3, 2);
 
-            Vector2 startLocation = new Vector2(35, 35);
-            Vector2 endLocation = new Vector2(40, 40);
+            Vector2 startLocation = new Vector2(0, 0);
+            Vector2 endLocation = new Vector2(5, 5);
 
             bool result = CollisionHelper.IsPointOnLine(point, startLocation, endLocation);
 
@@ -44,10 +44,10 @@ namespace CodeNameSectorTests
             // ./...
             // S....
 
-            Vector2 point = new Vector2(37, 37);
+            Vector2 point = new Vector2(2, 2);
 
-            Vector2 startLocation = new Vector2(35, 35);
-            Vector2 endLocation = new Vector2(40, 40);
+            Vector2 startLocation = new Vector2(0, 0);
+            Vector2 endLocation = new Vector2(5, 5);
 
             bool result = CollisionHelper.IsPointOnLine(point, startLocation, endLocation);
 
